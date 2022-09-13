@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      function User(name, bio) {
+        const heading = document.createElement("h1")
+        heading.appendChild(document.createTextNode(name))
+
+        const para = document.createElement("p")
+        para.appendChild(document.createTextNode(bio))
+
+        const root = document.createElement("div")
+        root.appendChild(heading)
+        root.appendChild(para)
+
+        return root
+      }
+
+      function App() {
+        const root = document.createElement("div")
+
+        root.appendChild(User("Jatin", "something"))
+        root.appendChild(User("Prerna", "something else"))
+
+        return root
+      }
+
+      document.getElementById("app").appendChild(App());
+    </script>
+  </body>
+</html>

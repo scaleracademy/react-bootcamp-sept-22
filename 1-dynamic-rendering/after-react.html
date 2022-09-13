@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      function App() {
+        return React.createElement("h1", null, "Hello World");
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("app"))
+      root.render(
+        React.createElement(App),
+      )
+    </script>
+  </body>
+</html>
